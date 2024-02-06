@@ -1,0 +1,4 @@
+steps:
+  #Docker Build
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ["compute","scp","index.html","instance-1:/var/www/html/"]
